@@ -15,6 +15,37 @@
   </clr-header>
   <div class="content-container">
     <div class="content-area">
+       <!--{{ profile | json }}-->
+<div class="row" *ngFor="let todo of profile">
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="card-header">
+                Header
+            </div>
+            <div class="card-block">
+                <div class="card-media-block">
+                    <img src="..." class="card-media-image">
+                    <div class="card-media-description">
+                        <span class="card-media-title">
+                            Project A
+                        </span>
+                        <span class="card-media-text">
+                            Owner: John Doe
+                        </span>
+                    </div>
+                </div>
+                <div class="card-text">
+                    ...
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-sm btn-link">Action</button>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
       <router-outlet></router-outlet>
     </div>
   </div>
